@@ -1113,6 +1113,7 @@ const CREDS={
   'cherry@specialyou.in': 'Cherry@2024',
   'sunny@specialyou.in':  'Sunny@2024',
   'farman@specialyou.in': 'farman@123',
+  'khushichawla@specialyou.in':  'Khushi@123',
   'sheetal@specialyou.in': 'sheetal@123',
 };
 
@@ -4179,6 +4180,7 @@ function getUsers() {
     'cherry@specialyou.in':  { name:'Cherry',  pass:'Cherry@2024',  role:'admin' },
     'sunny@specialyou.in':   { name:'Sunny',   pass:'Sunny@2024',   role:'admin' },
     'farman@specialyou.in':  { name:'Farman',  pass:'farman@123',   role:'user'  },
+    'khushichawla@specialyou.in':  { name:'Khushi',  pass:'Khushi@123',   role:'user'  },
     'sheetal@specialyou.in': { name:'Sheetal', pass:'sheetal@123',  role:'user'  },
   };
   try {
@@ -4190,6 +4192,7 @@ function getUsers() {
       if(saved['cherry@specialyou.in'])  saved['cherry@specialyou.in'].role  = 'admin';
       if(saved['sunny@specialyou.in'])   saved['sunny@specialyou.in'].role   = 'admin';
       if(saved['farman@specialyou.in'])  saved['farman@specialyou.in'].role   = saved['farman@specialyou.in'].role  || 'user';
+      if(saved['khushichawla@specialyou.in'])  saved['khushichawla@specialyou.in'].role   = saved['khushichawla@specialyou.in'].role  || 'user';
       if(saved['sheetal@specialyou.in']) saved['sheetal@specialyou.in'].role  = saved['sheetal@specialyou.in'].role || 'user';
       return saved;
     }
